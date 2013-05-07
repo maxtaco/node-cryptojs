@@ -1,10 +1,5 @@
 
-JSMIN=uglifyjs -c -m
-
 CRYPTO_JS_VERSION=3.1.2
-JQUERY_VERSION=1.9.0
-ICED_VERSION=1.4.0a
-PUREPACK_VERSION=0.0.10
 
 CRYPTO_SRC=deps/crypto-js/src
 
@@ -44,4 +39,12 @@ build/js/crypto.js: \
 	mkdir -p `dirname $@`
 	cat $^ > $@
 
-.PHONY: clean depclean test
+index.js : build/js/crypto.js
+	cat $^ > $@
+	echo "exports.CryptoJS = CryptoJS;" >> $@
+
+default: index.js
+distclean : depclean clean
+
+
+.PHONY: clean depclean test distclean
