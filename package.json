@@ -1,5 +1,5 @@
 {
-  "name":         "cryptojs",
+  "name":         "crypto-js",
   "description":  "A node wrapper around Jeff Mott's CryptoJS library", 
   "keywords":     ["crypto"],
   "author":       "Maxwell Krohn",
