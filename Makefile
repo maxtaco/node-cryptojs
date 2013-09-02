@@ -35,7 +35,8 @@ build/js/crypto.js: \
 	$(CRYPTO_SRC)/evpkdf.js \
 	$(CRYPTO_SRC)/cipher-core.js \
 	$(CRYPTO_SRC)/aes.js \
-	$(CRYPTO_SRC)/pbkdf2.js
+	$(CRYPTO_SRC)/pbkdf2.js \
+	ext/twofish.js
 	mkdir -p `dirname $@`
 	cat $^ > $@
 
