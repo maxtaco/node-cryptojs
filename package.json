@@ -3,7 +3,7 @@
   "description":  "A node wrapper around Jeff Mott's CryptoJS library", 
   "keywords":     ["crypto"],
   "author":       "Maxwell Krohn",
-  "version":      "3.1.2a",
+  "version":      "3.1.2b",
   "licenses":     [{
     "type":       "unknown",
     "url":        "https://code.google.com/p/crypto-js/wiki/License"
